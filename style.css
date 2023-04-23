@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+* 
+{
+    box-sizing: border-box;
+}
+
+  
+
+  .logo-container-left {
+    background-color: #EDF1D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:10px;
+  }
+  
+  .logo-container-left img {
+    top: 10px;
+    height: 80px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  .logo-container-right {
+    background-color: #EDF1D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:10px;
+  }
+  
+  .logo-container-right img {
+    top: 10px;
+    height: 80px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  
+  
+  
+
+body /* ana arkaplan rengi */
+{
+    font-family: 'Josefin Sans', sans-serif;
+    background: rgb(197, 201, 174);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: -20px 0 50px;
+	margin-top: 20px;
+}
+
+input, select  /* Hesap oluştur bölümündeki form için düzenlemeler*/
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #609966;
+    /*eklendi*/
+    border-radius:5px;
+    /*eklendi*/
+}
+/*eklendi*/
+input::placeholder {
+    color: white;
+  }
+option, select{
+    color:white;
+}
+/*eklendi*/
+.userType{
+    color:white !important;
+}
+
+
+h1 
+{
+    font-weight: 700;
+    margin: 0;
+}
+
+p 
+{
+    font-size: 16px;   /* Merhaba! Panelinin yazı detayları */
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: .5px;
+    margin: 20px 0 30px;
+}
+
+span 
+{
+    font-size: 16px;
+    font-weight: 300; /*Hesabınıza Giriş Yapın metni detayları*/ 
+}
+
+a  
+{
+    color: #606966;  /* Şifrenizi mi unuttunuz metni*/
+    font-size: 16px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.container /* orta panel renk */
+{
+    background: #40513B;    /* #609966 alternatif renk*/ /* gecis esnasında görülen renk */
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);  /* arkaplan gölge */
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.form-container form /* sign in - create account panel renk */
+{
+    background: #EDF1D6;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+
+.form-container input /* input panel renk */
+{
+    font-family: "Montserrat";
+    font-weight:400 ;
+    background: #609966;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+button /* buton renk */
+{
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background: #40513B;
+    color: #fff;
+    font-family: "Montserrat";  /* Giriş Yap-Kayıt Ol buton fontu*/
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    /*eklendi*/
+    text-align:center;
+    /*eklendi*/
+}
+
+button:active 
+{
+    transform: scale(.95);
+}
+
+button:focus 
+{
+    outline: none;
+}
+
+button.ghost /* sign in sign up buton çerçeve renk */
+{
+    background: transparent;
+    border-color: #fff;
+}
+
+.userType
+{
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    color: rgb(44, 70, 47);
+    padding-left: 15px;
+    padding-right: 30px ;
+}
+
+.form-container 
+{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all .6s ease-in-out;
+}
+
+.sign-in-container
+{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.sign-up-container 
+{
+    left: 0;
+    width: 50%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.overlay-container 
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform .6s ease-in-out;
+    z-index: 100;
+}
+
+.overlay /* ana gradyen renk */
+{
+    background: #606966; /* panelin gradient olmadan pure background rengi */
+    background: linear-gradient(to right, #609966, #9DC08B) no-repeat 0 0 / cover;
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateY(0);
+    transition: transform .6s ease-in-out;
+}
+
+.overlay-panel 
+{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform .6s ease-in-out;
+}
+
+.overlay-right 
+{
+    right: 0;
+    transform: translateY(0);
+}
+
+.overlay-left 
+{
+    transform: translateY(-20%);
+}
+
+/* Move signin to right */
+.container.right-panel-active .sign-in-container 
+{
+    transform: translateY(100%);
+}
+
+/* Move overlay to left */
+.container.right-panel-active .overlay-container 
+{
+    transform: translateX(-100%);
+}
+
+/* Bring signup over signin */
+.container.right-panel-active .sign-up-container 
+{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+/* Move overlay back to right */
+.container.right-panel-active .overlay 
+{
+    transform: translateX(50%);
+}
+
+/* Bring back the text to center */
+.container.right-panel-active .overlay-left 
+{
+    transform: translateY(0);
+}
+
+/* Same effect for right */
+.container.right-panel-active .overlay-right 
+{
+    transform: translateY(20%);
+}
+
+
+
+
+

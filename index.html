@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Diet Whisperer</title>
+</head>
+
+<body>
+
+
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <div class="logo-container-right">
+                <img src="logo-black.png" alt="Logo">
+            </div>
+            <form action="#">
+                <h1>Hesap Oluştur</h1>
+
+                <span>Kayıt için E-Postanızı kullanın.</span>
+                <input type="text" placeholder="İsim" />
+                <input type="email" placeholder="E-Posta" />
+                <input type="password" placeholder="Şifre" />
+
+                <label for="userType">Kullanıcı Tipi</label>
+                <select class="userType" id="userType" name="userType">
+                    <option value="client">Danışan</option>
+                    <option value="nutritionist">Diyetisyen</option>
+                </select>
+
+
+                <button>Kayıt Ol</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <div class="logo-container-left">
+                <img src="logo-black.png" alt="Logo">
+            </div>
+            <form action="#">
+                <h1>Giriş Yap</h1>
+
+                <span>Hesabınıza giriş yapın</span>
+                <input type="email" placeholder="E-Posta" />
+                <input type="password" placeholder="Şifre" />
+                <a href="#">Şifrenizi mi unuttunuz?</a>
+                <button>Giriş Yap</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Tekrar Hoşgeldiniz!</h1>
+                    <p>Bilgilerinizi girerek sisteme giriş yapın.</p>
+                    <button class="ghost" id="signIn">Giriş Yap</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Merhaba!</h1>
+                    <p>Kişisel bilgilerinizi girin ve DietWhisperer'a adım atın.</p>
+                    <button class="ghost" id="signUp">Kayıt Ol</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
