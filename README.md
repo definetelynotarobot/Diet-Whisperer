@@ -35,13 +35,13 @@ Mehmet Emin Eraslan, Batuhan Şimşek, Mahire Zuhal Özdemir, Derya Öztürk
 
 # Takım Üyeleri Görevleri 
 Frontend: Mehmet Emin Eraslan, Batuhan Şimşek. 
-Backend:Mahire Zuhal Özdemir, Derya Öztürk
+Backend:Mahire Zühal Özdemir, Derya Öztürk
 
 # Takım Üyeleri Yetkinlikleri
 Mehmet Emin Eraslan-Frontend(React, SASS)
 Batuhan Şimşek-Frontend(React, SASS)
-Mahire Zuhal Özdemir-Backend(Python, Django)
-Derya Öztürk(Python, Django)
+Mahire Zühal Özdemir-Backend(.Net, C#)
+Derya Öztürk- Backend(.Net, C#)
 
 # Kullanılan Teknolojiler
-React, SASS, NPM, Python, Django
+React, SASS, NPM, .Net, C#
