@@ -40,8 +40,8 @@ Backend:Mahire Zühal Özdemir, Derya Öztürk
 # Takım Üyeleri Yetkinlikleri
 Mehmet Emin Eraslan-Frontend(React, SASS)
 Batuhan Şimşek-Frontend(React, SASS)
-Mahire Zühal Özdemir-Backend(.Net, C#)
-Derya Öztürk- Backend(.Net, C#)
+Mahire Zühal Özdemir-Backend(Node.js, Express.js)
+Derya Öztürk- Backend(Node.js, Express.js)
 
 # Kullanılan Teknolojiler
-React, SASS, NPM, .Net, C#
+React, SASS, NPM, Node.js, Express.js
