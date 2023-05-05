@@ -31,7 +31,7 @@ module.exports.girisPOST = function (req, res) {
     }); // bağlan
 
 
-    sorgu = "select * from admins where (email='" + k_adi + "') and (password='" + sifre + "')";
+    sorgu = "select * from dietwhisperer.users where (email='" + k_adi + "') and (password='" + sifre + "')";
     baglanti.query(sorgu, function (hata, sonuc) {
 
         if (hata) {
