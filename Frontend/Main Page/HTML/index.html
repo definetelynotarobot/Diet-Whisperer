@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/Main Page/CSS/style.css">
-        <title>DietWhisperer</title>
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Frontend/Main-Page/CSS/style.css">
+    <title>DietWhisperer</title>
+</head>
 
-
-        <nav class="navbar">
-            <div class="logo">
-                <img src="/Photos/logo-white.png" alt="Logo">
-            </div>
-            <a href="#">Create Diet Plan</a>
-            <a href="#">Food Recipes</a>
-            <a href="#">Get Exercise Advice</a>
-            <a href="#">User Information</a>
-        </nav>
+<body>
 
 
-
-        <div class="welcome">
-        <h1>DietWhisperer'a Hoş Geldiniz.</h1>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/Frontend/Photos/logo-white.png" alt="Logo">
         </div>
-    </body>
+        <a href="#">Create Diet Plan</a>
+        <a href="#">Food Recipes</a>
+        <a href="#">Get Exercise Advice</a>
+        <a href="#">User Information</a>
+    </nav>
+
+    <div class="input-container">
+        <input type="text" id="userInput" placeholder="Nasıl bir diyet istiyorsunuz">
+        <input type="text" id="response" placeholder="Cevap">
+        <button onclick="fetchData()">Sor!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
