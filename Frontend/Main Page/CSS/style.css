@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
 *
 {
     margin: 0;
@@ -60,9 +62,14 @@ a
     padding-top: 0px;
 
 }
-html, body {
-    margin: 0;
-    height: 100%;
+
+
+div
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h1
@@ -84,101 +91,3 @@ h1
     justify-content: center;
     align-items: center;
 }
-/* styles.css */
-#chat-container {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-  }
-  
-  #chat-window {
-    height: 300px;
-    overflow-y: scroll;
-    padding-bottom: 10px;
-  }
-  
-  .user-message,
-  .assistant-message {
-    margin-bottom: 10px;
-  }
-  
-  .user-message .message-content,
-  .assistant-message .message-content {
-    display: inline-block;
-    padding: 8px;
-    border-radius: 5px;
-  }
-  
-  .user-message .message-content {
-    background-color: #0084ff;
-    color: #fff;
-  }
-  
-  .assistant-message .message-content {
-    background-color: #f3f3f3;
-    color: #333;
-  }
-  
-  #user-input-container {
-    margin-top: 10px;
-  }
-  
-  #user-input {
-    width: 200px;
-    padding: 5px;
-  }
-  
-  #submit-button {
-    padding: 5px 10px;
-  }
-  @keyframes buttonClick {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
-}
-  .input-container{
-    position:absolute;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    top:50%;
-    left:15%;
-  }
-  .input-container button{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border:none;
-    border-radius:10px;
-    color:green;
-    background-color: white;
-    padding:25px;
-    height:20px;
-    width:70px;
-    animation: buttonClick 0.3s ease;
-  }
-  .input-container button:hover{
-    animation: buttonClick 1s infinite;
-  }
-  input{
-    position:relative;
-    background: white;
-    height: 50px;
-    margin:10px;
-    width: 500px;
-    z-index: 99;
-    color:green;
-    border-radius:10px;
-    border:none;
-    padding:10px;
-    outline:none;
-    font-family:"Montserrat";
-  }
-  input::placeholder{
-    color:green;
-
-  }
-  
