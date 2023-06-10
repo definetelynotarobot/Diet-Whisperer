@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DietWhisperer</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../../Frontend/Main Page/HTML/index.html">
+                <img src="/Frontend/Photos/logo-white.png" alt="Logo">
+            </a>
+        </div>
+        <a href="../../Frontend/Create Diet Plan/index.html">Create Diet Plan</a>
+        <a href="../../Frontend/Food Recipes/index.html">Food Recipes</a>
+        <a href="../../Frontend/Get Exercise Advice/index.html">Get Exercise Advice</a>
+        <a href="#">User Information</a>
+    </nav>
+
+    <div class="prompt-rehberi">
+        <div class="prompt-rehberi-icerik">
+            <h1>DietWhisperer ile hayatını düzene sokabilirsin!</h1>
+            <p>Sorabileceğin örnek sorular: 
+                <br>Diyet yaparken evde yapabileceğim etkili bir kardiyo egzersizi nedir?<br>
+                <br>Vücut yağını yakmaya yardımcı olan bir güç antrenmanı rutini önerir misiniz?<br>
+                <br>Diyet programıma uyumlu bir esneme ve esneklik egzersizi nasıl yapabilirim? <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="input-container">
+        <input type="text" id="userInput" placeholder="Nasıl bir egzersiz planı istiyorsunuz?">
+        <textarea id="response" placeholder="Response"></textarea>        <button onclick="fetchData()">Sor!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
